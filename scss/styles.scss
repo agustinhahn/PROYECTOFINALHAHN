@@ -1,0 +1,16 @@
+//partials generales (index // programa)
+
+@use './partials/footer';
+@use './partials/titulos';
+
+//partials index
+
+@use './partials/formulariosindex';
+@use './partials/botonesindex';
+@use './partials/generalindex';
+
+//partials programa
+
+@use './partials/botonesprograma';
+@use './partials/cardsprograma';
+@use './partials/generalprograma';

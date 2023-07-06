@@ -1,0 +1,135 @@
+/*contador*/
+
+.div_contador{
+    margin-top: 5px;
+    .span_contador{
+        color:white
+    }
+    .boton_resta{
+        width: 25px;
+        margin: 0px 5px 0px 5px
+    }
+    .boton_suma{
+        width: 25px;
+        margin: 0px 5px 0px 5px
+    }
+}
+
+/*boton cotizar*/
+
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    color: #2b566e;
+    cursor: pointer;
+    position: relative;
+    padding: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all .15s ease;
+    &:hover {
+        color: #224d64;
+        .button_sl {
+            width: calc(100% + 15px);
+            &::after {
+                background-color: #fff;
+                }
+            }
+        }
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+        left: 0;
+        height: calc(50% - 5px);
+        border: 1px solid #7D8082;
+        transition: all .15s ease;
+    }
+    &::before {
+        top: 0;
+        border-bottom-width: 0;
+    }
+    &::after {
+        bottom: 0;
+        border-top-width: 0;
+    }
+    &active,
+    &button:focus {
+        outline: none;
+    }
+    &:active::before,
+    &:active::after {
+        right: 3px;
+        left: 3px;
+    }
+    &:active::before {
+        top: 3px;
+    }
+    &:active::after {
+        bottom: 3px;
+    }
+    .button_lg {
+        position: relative;
+        display: block;
+        padding: 10px 20px;
+        color: #fff;
+        background-color: #224d64;
+        overflow: hidden;
+        box-shadow: inset 0px 0px 0px 1px transparent;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 2px;
+            height: 2px;
+            background-color: #224d64;
+        }
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 4px;
+            height: 4px;
+            background-color: #224d64;
+            transition: all .2s ease;
+        }
+        .button_text {
+            position: relative;
+            }
+    }
+}
+
+.button_sl {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    left: -8px;
+    width: 0;
+    background-color: #ff4655;
+    transform: skew(-15deg);
+    transition: all .2s ease;
+}
+
+.borrar_elemento:hover{
+    background-color: red;
+}
+
+.btn_carrito_comprar:hover{
+    background-color: green;
+}
+
+.btn_carrito_cerrar:hover{
+    background-color: gray;
+}

@@ -1,0 +1,29 @@
+/* botones */
+.button__form {
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border-radius: 9px;
+    background: #0d0e16;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+    height: 55px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-start;
+    &:hover {
+        box-shadow: 7px 5px 56px -14px #0d0e16;
+    }
+    .p__button__form {
+        background-color: #0d0e16;
+        text-align: center;
+        padding: 0px;
+        color: #fff
+    }
+}
+
+
